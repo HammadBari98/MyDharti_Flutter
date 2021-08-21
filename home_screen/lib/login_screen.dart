@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_screen/home_screen.dart';
 
 class Login_Screen extends StatelessWidget {
   @override
@@ -114,7 +115,12 @@ class _MyHomePageState extends State<MyHomePage> {
                           Padding(
                             padding: const EdgeInsets.only(top: 9.0),
                             child: MaterialButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Home_Screen()));
+                              },
                               child: Text("LOGIN",
                                   style: TextStyle(
                                       fontSize: 18.0, color: Colors.white)),

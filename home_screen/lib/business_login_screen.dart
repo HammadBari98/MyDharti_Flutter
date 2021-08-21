@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_screen/otp_screen.dart';
 
 class Business_Account extends StatelessWidget {
   @override
@@ -154,7 +155,12 @@ class _MyHomePageState extends State<MyHomePage> {
                           Padding(
                             padding: const EdgeInsets.only(top: 9.0),
                             child: MaterialButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => OTP_Screen()));
+                              },
                               child: Text("SUBMIT",
                                   style: TextStyle(
                                       fontSize: 18.0, color: Colors.white)),

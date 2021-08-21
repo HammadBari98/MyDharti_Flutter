@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_screen/business_login_screen.dart';
 import 'package:home_screen/login_screen.dart';
 import 'package:home_screen/otp_screen.dart';
 
@@ -86,7 +87,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => OTP_Screen()));
+                                      builder: (context) =>
+                                          Business_Account()));
                             },
                             child: Text("CREATE NEW ACCOUNT",
                                 style: TextStyle(

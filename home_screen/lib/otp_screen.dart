@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_screen/business_login_screen.dart';
+import 'package:home_screen/package_screen.dart';
 
 class OTP_Screen extends StatelessWidget {
   @override
@@ -113,11 +114,20 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                         ),
-                        child: Padding(
-                          padding: EdgeInsets.all(14.0),
-                          child: Text(
-                            'Verify',
-                            style: TextStyle(fontSize: 16),
+                        child: MaterialButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Package_Screen()));
+                          },
+                          child: Text("SUBMIT",
+                              style: TextStyle(
+                                  fontSize: 18.0, color: Colors.white)),
+                          minWidth: 250.0,
+                          color: Colors.red,
+                          padding: EdgeInsets.symmetric(
+                            vertical: 12.0,
                           ),
                         ),
                       ),

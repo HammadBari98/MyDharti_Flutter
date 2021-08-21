@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_screen/home_screen.dart';
 
 class Payment_Screen extends StatelessWidget {
   @override
@@ -52,7 +53,10 @@ class MyHomePage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 9.0),
                 child: MaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Home_Screen()));
+                  },
                   child: Text("SUBMIT",
                       style: TextStyle(fontSize: 18.0, color: Colors.white)),
                   minWidth: 250.0,
